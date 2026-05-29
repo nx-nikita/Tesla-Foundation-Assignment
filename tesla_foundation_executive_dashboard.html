@@ -1,0 +1,211 @@
+
+<h2 class="sr-only">Tesla Foundation Executive Dashboard — FY 2025-26 YTD financial overview, thematic utilization, partner variance, and LFA achievement tracking</h2>
+
+<style>
+  .dash { padding: 1.25rem 1rem 2rem; font-family: var(--font-sans); }
+  .dash-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:1.25rem; border-bottom: 0.5px solid var(--color-border-tertiary); padding-bottom:0.75rem; }
+  .dash-title { font-size:15px; font-weight:500; color:var(--color-text-primary); margin:0; }
+  .dash-sub { font-size:12px; color:var(--color-text-secondary); margin:2px 0 0; }
+  .tag { font-size:11px; padding:3px 8px; border-radius:var(--border-radius-md); background:var(--color-background-success); color:var(--color-text-success); }
+  .kpi-grid { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:10px; margin-bottom:1.25rem; }
+  .kpi { background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:0.9rem 1rem; }
+  .kpi-label { font-size:11px; color:var(--color-text-secondary); text-transform:uppercase; letter-spacing:0.04em; margin:0 0 6px; }
+  .kpi-value { font-size:22px; font-weight:500; color:var(--color-text-primary); margin:0; line-height:1.1; }
+  .kpi-sub { font-size:11px; color:var(--color-text-secondary); margin:4px 0 0; }
+  .kpi-accent { border-left:3px solid; }
+  .kpi-blue { border-color:#378ADD; }
+  .kpi-teal { border-color:#1D9E75; }
+  .kpi-amber { border-color:#BA7517; }
+  .kpi-red { border-color:#E24B4A; }
+  .charts-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:1.25rem; }
+  .chart-card { background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-lg); padding:1rem 1.1rem; }
+  .chart-card-full { background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-lg); padding:1rem 1.1rem; margin-bottom:1.25rem; }
+  .card-title { font-size:12px; font-weight:500; color:var(--color-text-secondary); text-transform:uppercase; letter-spacing:0.05em; margin:0 0 1rem; }
+  .legend { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:8px; font-size:11px; color:var(--color-text-secondary); }
+  .legend span { display:flex; align-items:center; gap:4px; }
+  .legend-dot { width:9px; height:9px; border-radius:2px; flex-shrink:0; }
+  .lfa-table { width:100%; border-collapse:collapse; font-size:12px; }
+  .lfa-table th { font-size:11px; font-weight:500; color:var(--color-text-secondary); text-align:left; padding:0 8px 8px 0; border-bottom:0.5px solid var(--color-border-tertiary); white-space:nowrap; }
+  .lfa-table td { padding:7px 8px 7px 0; border-bottom:0.5px solid var(--color-border-tertiary); color:var(--color-text-primary); vertical-align:middle; }
+  .lfa-table tr:last-child td { border-bottom:none; }
+  .pill { display:inline-block; font-size:10px; padding:2px 7px; border-radius:20px; font-weight:500; }
+  .pill-green { background:#EAF3DE; color:#3B6D11; }
+  .pill-amber { background:#FAEEDA; color:#854F0B; }
+  .pill-red { background:#FCEBEB; color:#A32D2D; }
+  .bar-container { display:flex; align-items:center; gap:6px; }
+  .bar-track { flex:1; height:5px; background:var(--color-background-secondary); border-radius:4px; overflow:hidden; }
+  .bar-fill { height:100%; border-radius:4px; transition:width 0.5s; }
+  .footer-note { font-size:11px; color:var(--color-text-secondary); text-align:right; margin-top:0.5rem; }
+</style>
+
+<div class="dash">
+  <div class="dash-header">
+    <div>
+      <p class="dash-title">Tesla Foundation — Executive Program Dashboard</p>
+      <p class="dash-sub">FY 2025-26 &nbsp;·&nbsp; 12 Active Projects &nbsp;·&nbsp; Director: Priya Menon</p>
+    </div>
+    <span class="tag">All Projects Active</span>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi kpi-accent kpi-blue">
+      <p class="kpi-label">Total Committed Budget</p>
+      <p class="kpi-value">₹3,000 L</p>
+      <p class="kpi-sub">Across 12 implementation partners</p>
+    </div>
+    <div class="kpi kpi-accent kpi-teal">
+      <p class="kpi-label">Disbursed YTD</p>
+      <p class="kpi-value">₹1,512 L</p>
+      <p class="kpi-sub">50.4% of committed budget</p>
+    </div>
+    <div class="kpi kpi-accent kpi-amber">
+      <p class="kpi-label">Utilized YTD</p>
+      <p class="kpi-value">₹1,321 L</p>
+      <p class="kpi-sub">87.4% utilization of disbursed</p>
+    </div>
+    <div class="kpi kpi-accent kpi-red">
+      <p class="kpi-label">Pending Disbursement</p>
+      <p class="kpi-value">₹1,488 L</p>
+      <p class="kpi-sub">49.6% of budget awaiting release</p>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-card">
+      <p class="card-title">Utilization by thematic pillar (₹ Lakhs)</p>
+      <div class="legend">
+        <span><span class="legend-dot" style="background:#378ADD"></span>Budget</span>
+        <span><span class="legend-dot" style="background:#1D9E75"></span>Disbursed</span>
+        <span><span class="legend-dot" style="background:#BA7517"></span>Utilized</span>
+      </div>
+      <div style="position:relative; height:200px;">
+        <canvas id="pillarChart" role="img" aria-label="Grouped bar chart showing budget, disbursed and utilized amounts for Education & Skill Dev, Climate Action, and Health & Nutrition pillars">Education 1180 disbursed 610 utilized 527. Climate 1175 disbursed 600 utilized 595. Health 445 disbursed 222 utilized 199.</canvas>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <p class="card-title">Partner utilization rate (% of disbursed)</p>
+      <div style="position:relative; height:220px;">
+        <canvas id="partnerChart" role="img" aria-label="Horizontal bar chart showing utilization rate as percentage of disbursed amount for each of 12 implementation partners">Pratham 78.9%, LabourNet 86.4%, Sustaintech 86.7%, WOTR 82.5%, SELCO 92.9%, Ekjut 93.3%, Doctors For You 87.2%, Reap Benefit 90.8%, SayTrees 90.6%, Educate Girls 88%, Skill Council Auto 90.5%, CEE 85%.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart-card-full">
+    <p class="card-title">LFA achievement tracking — key indicators (YTD vs annual plan)</p>
+    <table class="lfa-table">
+      <thead>
+        <tr>
+          <th style="width:12%">Project</th>
+          <th style="width:26%">Indicator</th>
+          <th style="width:9%;text-align:right">Planned</th>
+          <th style="width:9%;text-align:right">Actual YTD</th>
+          <th style="width:8%;text-align:right">Achieved</th>
+          <th style="width:25%">Progress</th>
+          <th style="width:7%">Status</th>
+        </tr>
+      </thead>
+      <tbody id="lfaBody"></tbody>
+    </table>
+  </div>
+
+  <p class="footer-note">All figures in ₹ Lakhs &nbsp;·&nbsp; Data: Tesla Foundation Finance & LFA Sheets &nbsp;·&nbsp; FY 2025-26 YTD</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const pillarData = {
+  labels: ['Education & Skill Dev', 'Climate Action', 'Health & Nutrition'],
+  budget: [1180, 1175, 445],
+  disbursed: [610, 600, 222],
+  utilized: [527, 595, 199]
+};
+
+new Chart(document.getElementById('pillarChart'), {
+  type: 'bar',
+  data: {
+    labels: pillarData.labels,
+    datasets: [
+      { label: 'Budget', data: pillarData.budget, backgroundColor: '#378ADD', borderRadius: 3 },
+      { label: 'Disbursed', data: pillarData.disbursed, backgroundColor: '#1D9E75', borderRadius: 3 },
+      { label: 'Utilized', data: pillarData.utilized, backgroundColor: '#BA7517', borderRadius: 3 }
+    ]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { font: { size: 11 }, color: '#888780', maxRotation: 0, autoSkip: false }, grid: { display: false } },
+      y: { ticks: { font: { size: 10 }, color: '#888780', callback: v => '₹' + v }, grid: { color: 'rgba(136,135,128,0.15)' } }
+    }
+  }
+});
+
+const partners = [
+  { name: 'Pratham', rate: 78.9 },
+  { name: 'LabourNet', rate: 86.4 },
+  { name: 'Sustaintech', rate: 86.7 },
+  { name: 'WOTR', rate: 82.5 },
+  { name: 'SELCO', rate: 92.9 },
+  { name: 'Ekjut', rate: 93.3 },
+  { name: 'Doctors For You', rate: 87.2 },
+  { name: 'Reap Benefit', rate: 90.8 },
+  { name: 'SayTrees', rate: 90.6 },
+  { name: 'Educate Girls', rate: 88.0 },
+  { name: 'Skill Council Auto', rate: 90.5 },
+  { name: 'CEE', rate: 85.0 }
+];
+
+new Chart(document.getElementById('partnerChart'), {
+  type: 'bar',
+  data: {
+    labels: partners.map(p => p.name),
+    datasets: [{
+      label: 'Utilization %',
+      data: partners.map(p => p.rate),
+      backgroundColor: partners.map(p => p.rate >= 90 ? '#1D9E75' : p.rate >= 85 ? '#378ADD' : '#E24B4A'),
+      borderRadius: 3
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => ' ' + ctx.raw + '%' } } },
+    scales: {
+      x: { min: 70, max: 100, ticks: { font: { size: 10 }, color: '#888780', callback: v => v + '%' }, grid: { color: 'rgba(136,135,128,0.15)' } },
+      y: { ticks: { font: { size: 10 }, color: '#888780' }, grid: { display: false } }
+    }
+  }
+});
+
+const lfaRows = [
+  { proj: 'TF-2026-001', ind: 'STEM labs commissioned', planned: '50', actual: '28', pct: 56 },
+  { proj: 'TF-2026-002', ind: 'Skill vouchers redeemed', planned: '8,000', actual: '4,400', pct: 55 },
+  { proj: 'TF-2026-003', ind: 'Solar cookers installed', planned: '4,500', actual: '2,200', pct: 49 },
+  { proj: 'TF-2026-004', ind: 'Farmers trained on CR practices', planned: '10,000', actual: '5,400', pct: 54 },
+  { proj: 'TF-2026-005', ind: 'Schools with rooftop solar', planned: '200', actual: '110', pct: 55 },
+  { proj: 'TF-2026-006', ind: 'Women in nutrition cohort', planned: '6,000', actual: '3,300', pct: 55 },
+  { proj: 'TF-2026-007', ind: 'TB awareness sessions held', planned: '1,200', actual: '660', pct: 55 },
+  { proj: 'TF-2026-008', ind: 'Bootcamp cohorts completed', planned: '60', actual: '32', pct: 53 },
+  { proj: 'TF-2026-009', ind: 'Saplings planted', planned: '2,50,000', actual: '1,40,000', pct: 56 },
+  { proj: 'TF-2026-010', ind: 'Girls enrolled in health curriculum', planned: '8,000', actual: '4,500', pct: 56 },
+  { proj: 'TF-2026-011', ind: 'EV mechanics certified', planned: '1,500', actual: '820', pct: 55 },
+  { proj: 'TF-2026-012', ind: 'Schools using climate curriculum', planned: '400', actual: '220', pct: 55 }
+];
+
+const tbody = document.getElementById('lfaBody');
+lfaRows.forEach(r => {
+  const color = r.pct >= 60 ? '#639922' : r.pct >= 50 ? '#BA7517' : '#E24B4A';
+  const pillClass = r.pct >= 60 ? 'pill-green' : r.pct >= 50 ? 'pill-amber' : 'pill-red';
+  const label = r.pct >= 60 ? 'On track' : r.pct >= 50 ? 'Watch' : 'At risk';
+  tbody.innerHTML += `<tr>
+    <td style="font-size:11px; color:var(--color-text-secondary);">${r.proj}</td>
+    <td>${r.ind}</td>
+    <td style="text-align:right; color:var(--color-text-secondary);">${r.planned}</td>
+    <td style="text-align:right; font-weight:500;">${r.actual}</td>
+    <td style="text-align:right; font-weight:500;">${r.pct}%</td>
+    <td><div class="bar-container"><div class="bar-track"><div class="bar-fill" style="width:${r.pct}%; background:${color};"></div></div><span style="font-size:10px; color:var(--color-text-secondary); min-width:28px;">${r.pct}%</span></div></td>
+    <td><span class="pill ${pillClass}">${label}</span></td>
+  </tr>`;
+});
+</script>
